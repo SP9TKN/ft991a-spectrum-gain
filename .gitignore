@@ -1,0 +1,7 @@
+work/
+patched/
+__pycache__/
+*.SFL
+*.sfl
+TFT_*.bin
+*.zip
