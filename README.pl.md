@@ -1,4 +1,4 @@
-# FT-991A SPECTRUM GAIN — łatki firmware'u Yaesu FT-991A (SP9TKN)
+# FT-991A SPECTRUM GAIN i łagodniejszy DNR — łatki firmware'u Yaesu FT-991A (SP9TKN)
 
 > 🇬🇧 English version: [README.md](README.md)
 
@@ -7,10 +7,15 @@
 > inny procesor) i tylko z oficjalnych plików Yaesu **MAIN V02-07**, **TFT V02-00** i **DSP V01-12**. Nic
 > w nadawaniu nie jest zmieniane.
 
-**Patcher, który dodaje do Yaesu FT-991A regulację SPECTRUM GAIN: nową pozycję menu *154 SCOPE SPECTRUM GAIN*
-(−20…+20), która podnosi albo obniża waterfall i oba widoki widma, oraz szybką zmianę w trakcie pracy — przytrzymaj
-C.S przez ok. sekundę i kręć MULTI, a wartość pojawi się w rogu widma.** Opcjonalnie łagodzi też DNR. Skrypt działa
-na Twoich kopiach plików firmware'u Yaesu; w repozytorium nie ma kodu Yaesu.
+**Patcher do Yaesu FT-991A z dwiema poprawkami:**
+
+- **SPECTRUM GAIN** (MAIN + TFT): nowa pozycja menu *154 SCOPE SPECTRUM GAIN* (−20…+20), która podnosi albo obniża
+  waterfall i oba widoki widma, oraz szybka zmiana w trakcie pracy — przytrzymaj C.S przez ok. sekundę i kręć MULTI,
+  a wartość pojawi się w rogu widma.
+- **Łagodniejszy DNR** (DSP, opcjonalnie): cyfrowa redukcja szumu dostaje współczynniki z FTDX10, więc nie zjada już
+  tak mocno sygnału.
+
+Skrypt działa na Twoich kopiach plików firmware'u Yaesu; w repozytorium nie ma kodu Yaesu.
 
 <p align="center">
   <img src="docs/images/ft991a-spectrum-gain.jpg" width="720" alt="Wyświetlacz FT-991A: widmo i waterfall z wartością wzmocnienia +14 w prawym górnym rogu widma">

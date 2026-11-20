@@ -1,4 +1,4 @@
-# FT-991A SPECTRUM GAIN — firmware patches for the Yaesu FT-991A (SP9TKN)
+# FT-991A SPECTRUM GAIN and gentler DNR — firmware patches for the Yaesu FT-991A (SP9TKN)
 
 > 🇵🇱 Polish version: [README.pl.md](README.pl.md)
 
@@ -7,11 +7,15 @@
 > which has a different processor), and only from Yaesu's official **MAIN V02-07**, **TFT V02-00** and **DSP V01-12**.
 > Nothing about transmission is changed.
 
-**A patcher that adds a SPECTRUM GAIN control to the Yaesu FT-991A: a new menu item *154 SCOPE SPECTRUM GAIN*
-(−20…+20) that lifts or lowers the waterfall and both spectrum views, and a quick way to change it on the air — hold
-C.S for about a second and turn MULTI, with the value shown in the corner of the spectrum.** Optionally it also makes
-the DNR gentler. The script works on your own copies of Yaesu's firmware files; this repository contains no Yaesu
-code.
+**A patcher for the Yaesu FT-991A with two improvements:**
+
+- **SPECTRUM GAIN** (MAIN + TFT): a new menu item *154 SCOPE SPECTRUM GAIN* (−20…+20) that lifts or lowers the
+  waterfall and both spectrum views, and a quick way to change it on the air — hold C.S for about a second and turn
+  MULTI, with the value shown in the corner of the spectrum.
+- **Gentler DNR** (DSP, optional): the digital noise reduction gets the FTDX10's coefficients, so it no longer eats
+  the signal as hard.
+
+The script works on your own copies of Yaesu's firmware files; this repository contains no Yaesu code.
 
 <p align="center">
   <img src="docs/images/ft991a-spectrum-gain.jpg" width="720" alt="FT-991A display: spectrum and waterfall with the gain value +14 in the top right corner of the spectrum">
